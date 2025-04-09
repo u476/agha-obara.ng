@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kill.css">
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        
+
+    }
+    body{
+       background-color: rgba(14, 10, 10, 0.747);
+
+         background: url(download.jpeg);
+         background-repeat: no-repeat;
+        background-size: cover ;
+       
+        background-blend-mode: darken;
+        text-align: center;
+        bottom: 0%;
+        
+        
+        
+    }
+    
+
+
+        
+    
+    div.web ul li{
+        
+        display: inline;
+        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        
+
+        justify-content: space-between;
+        padding: 20px;
+        
+        
+        
+    }
+    div.web ul li a{ 
+        --angle:
+        color:rgba(255, 255, 255, 0.384);
+        
+        text-decoration-color: rgba(218, 165, 32, 0.637);
+       justify-content: center;
+       align-content: center;
+       border-color: gold;
+       border-radius: 10px;
+       position: relative;
+       background-color: rgba(0, 0, 0, 0.925);
+       
+      
+      
+    }
+    @property--angle {
+        syntax:"<angle>";
+        initial-value:0deg;
+        inherits:false;
+    }
+    div.web ul li a::after{
+        
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image:conic-gradient(from var(--angle), transparent 80%,blue,rgb(82, 11, 11));
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+      padding: 3px;
+      border-radius: 10px;
+      animation: 4s  spin linear infinite;
+    }
+    div.web ul li a::before{
+      filter: blur(2.5rem);
+      
+    }
+    @keyframes spin {
+        0%{
+         --angle:0deg;
+        }
+        25%{
+         --angle:10deg;
+        }
+        30%{
+            --angle:15deg;
+        }
+        50%{
+            --angle:20deg;
+        }
+        60% {
+            --angle:30deg;
+
+        }
+        70%{
+            --angle:50deg;
+        }
+        80%{
+            --angle:100deg;
+        }
+        90%{
+              --angle:250deg ; 
+        }
+        100%{--angle:360deg;}
+    }
+
+    div.web ul{
+        background: rgba(0, 0, 0, 0.712);
+        top: -20px;
+        background-size: 30vh;
+        padding:50px;
+    }
+    div.web ul li a:hover { 
+        padding: 20px;
+        border-radius: 10px;
+        text-decoration-color: teal;
+        background-color: rgba(0, 0, 0, 0.356);
+        margin: 2px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: initial;
+        
+    }
+    div.ht h1{ 
+        font-family: fantasy;
+        font-size: 50px;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.541);
+    }
+    div.ht h1 span {
+        animation:aka linear infinite 90s ;
+        
+        
+        
+        
+
+    }
+    @keyframes aka{ 
+        from{color: rgba(0, 0, 0, 0.507); font-size: 55px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        to{color: aqua;}
+        to{color: gold;}
+        to{color: rgba(0, 183, 255, 0.452);}
+    }
+    nav.it h1{
+        text-align: center;
+        top: -60px;
+        border: 3px;
+        
+        font-size: 40px;
+        content: counter(h1);
+        animation:h1 ease-in infinite 10s;
+      scale: 1;
+      background: linear-gradient(to right, green,blue);
+        background-clip: text;
+        color: transparent;
+    }
+    @keyframes 
+        
+     h1{ 
+        0%{
+            scale: 1;
+       background: linear-gradient(to right, red,blue);
+        background-clip: text;
+        color: transparent;
+        
+        }
+        25%{
+            scale: 1.1;
+            background: linear-gradient(to right, rgba(255, 0, 0, 0.267),violet,rgba(128, 0, 128, 0.767));
+        background-clip: text;
+        color: transparent;
+
+            
+        }
+    }
+    h1::after{
+        content: '';
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: red;
+        top: 50%;
+        left: 50%;
+        
+
+    }
+    input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+ .aids {
+  background:linear-gradient(rgb(15, 135, 214) solid,rgb(114, 51, 114));
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  width:auto ;
+  position: relative;
+  height: auto;
+  line-height: 2lvh;
+  display: block;
+  border: black solid;
+  box-shadow:4px 2px 4px red;
+  margin-left: 200px;
+  filter: blur(0px);
+  border-radius: 50px;
+  
+  scroll-snap-type: x mandatory;
+ 
+}
+ input{
+  caret-color: red;
+  
+}
+
+
+.aids:hover{
+  opacity: 0.8;
+  top: -5px;
+  box-shadow: 70px 90px 30px rgb(162, 55, 211);
+  
+  
+  
+
+}
+
+.my{
+  background:-webkit-repeating-linear-gradient(rgba(255, 0, 0, 0.418),rgba(0, 153, 255, 0.466));
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  width:400px;
+  position: relative;
+  height: auto;
+  line-height: 2lvh;
+  display: block;
+  border: black solid;
+  box-shadow:-40px -20px 30px 10px  rgb(162, 55, 211) ;
+  margin-left: 200px;
+  filter: drop-shadow(300px);
+  border-radius: 50px;
+  
+  scroll-snap-type: x mandatory;
+ 
+
+}
+
+ 
+.container {
+  bottom : 0px;
+  display: block;
+  position: relative;
+  padding: 60px;
+    margin-right: -30px;
+    background: linear-gradient(rgb(78, 58, 58),rgb(91, 158, 91));
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-clip: text;
+    color: transparent;
+     z-index: 300px;
+     font-size: 30px;
+    text-shadow: 0px 0px 20px white;
+}
+.my:hover:before{
+
+  contain: paint;
+  content: icon;
+  content: ">" ;
+  color: black;
+  font-size: 60px;
+  animation: show 15s 2 10s 4s ease-in-out fill-mode;
+  transform: translateX(5%);
+}
+@keyframes show{
+  0%{transform: translateX(10%);
+   color: red;};
+  40%{transform: translateX(20%);};
+  100%{ transform:translateX(40%) ;};
+}
+.my:hover{
+  color: #000;
+  background: linear-gradient( rgb(6, 139, 248),rgb(162, 55, 211));
+  font-style: italic;
+  font-weight: 500PX;
+  box-shadow: 10px 30px  60px rgb(162, 55, 211);
+}
+. {
+      padding: 10px 20px;
+      font-size: 18px;
+      color: white;
+      background: #6200ea;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .my:hover {
+      box-shadow: 0 0 20px #6200ea, 0 0 40px #6200ea;
+      transform: scale(1.05);
+    }
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.ni::before{
+  display: block;
+  animation:  15s 7s infinite linear ease-in;
+  animation-name: ni;
+  content: "|";
+  transition: 9s;
+}
+@keyframes ni{
+  0%{
+    content: "|hello !";
+  }
+  70%{content: "|you are welcome !"; }
+}
+.author{
+   
+    width: 20ch; /* Adjust this to the length of the text */
+    animation: typing 4s steps(20) infinite, blink 0.5s step-end infinite;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+   }
+    10% {
+      width: 20ch; /* Match the width of the text */
+    }
+    40%{
+        width: 40ch;
+    }
+    60%{
+        width: 80ch;
+    }
+    90%{
+        width: 100ch; 
+    }
+    100%{
+        width: 520ch; 
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+</style>
+<body>
+    <div class="web">
+       <ul>
+        <li><a href="about.html">about</a></li>
+        <li><a href="mailto:">mail us</a></li>
+        <li><a href="member.htm">member</a></li>
+        <li><a href="" type="">donate</a></li>
+      
+        <li><a href="python.html">be-member</a></li>
+        <li  >  <a href="" >help us</a> </li>
+ </li>
+     <button id="ibutton">hide aids</button>
+       </ul>
+
+      </div>
+      
+     <div class="aids" id="aids"><div class="container" id="container"><a class="" > 
+        <label class="my">$5 for the poor</label> <br><br> <br> <br> <br>
+        </a> <a class="" >
+        <label  class="my">$10 for the motherless</label><br><br><br><br><br>
+        </a><a ="">
+        <label class="my">$100 for the co_operative</label>
+        </div>
+      </div>
+        
+    </div><br><br><br>
+    
+    <div class="ht">
+        <h1> welcome to agha oboara jesu <br> together we can bring <span>development and aid the poor <br>now! and enjoy our service</span></h1>
+    </div > <br><br><br><br><br>
+    <div>
+        <a href=""><img src="" alt=""></a>
+    </div>
+    <nav class="it">
+      <h1 class="author">by barr.jc ugwuodo</h1>
+    <h1 class="me">together we are stronger <p class="ni"></p></h1>
+  </nav>
+  <select name="can" id="" ><option value="can"> rat</option>
+    <option value="can">cancel</option>
+    <option value="can">bcb</option></select>
+</body>
+<script src="be.js">
+  </script>
+
+</html>

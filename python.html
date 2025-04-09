@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="ccss.css">
+  <h1 class="h2 "> log in ahga obara socal website >> </h1>
+    <h1></h1>
+</head>
+<body >
+    
+    <div class="ci " id="work">
+        
+        <div class="curve" id="but"></div>
+        <div class="curve2"></div>
+    <div class="form">
+        
+        <h1 class="">login</h1>
+        <form action="" class="form-box" method="post" id="form">
+            <div class="input">
+                <input type="text" title="MUST BE AN ALPHABET WITH MAXIMIZE 7 CHARACTER" name="username" pattern ="[A-Za-z]{1,7}" required id="user" class="user" placeholder=" 7 CHARACTER" ><p id="result"></p>
+                <label for="username"
+                 >user name</label>
+                <a href="tel:+"> </a>
+           <i class='bx bx-user'></i>
+            </div>
+            <div class="input">   
+                   <input type="password" title="your password must be at least 8 character" pattern="[a-zA-Z0-9]{1,8}"  required  name="password"  id="pass"><i class='bx bx-key'></i><p class="error">your</p>
+
+                <label  style="
+                 font-weight: bold;
+                 
+                filter: blur(0.px);">password</label>
+
+                <i class='bx bx-key'></i>
+            </div>
+            <div class="input">
+                <button class="btn" type="submit" id="rat" onclick="" >Login</button>
+            </div>
+            <div class="register">
+               <p> don't have an account? <a href="sign.html"  class="sing-up">signin</a></p> 
+            </div>
+           
+
+        </form>
+    </div> 
+   <div class="
+   info log">
+    <h1 class="log">welcome back</h1>
+    <p>to our login site</p>
+    <select name="" id="" ></select>
+   </div> 
+  
+            
+    
+     <script>
+           async function verifyUser() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      const response = await fetch('/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, password })
+      });
+
+      if (response.ok) {
+        alert("Login successful!");
+      } else {
+        alert("Invalid credentials.");
+      }
+    } 
+     </script>  
+       
+</body>
+</html>

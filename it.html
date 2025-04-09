@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    
+    <button type="" id="white">submit</button>
+    <button type="" id="ja"> increse</button>
+    <button type="" id="ni">decrese</button>
+<p id="fet" style="color: blueviolet;">0</p>
+<h1>enter your tempreture:</h1>
+<input type="text" id="text">
+<button type="submit" id="submit">submit</button>
+<p id="kill" style="color: brown;"></p>
+</body>
+<Script>
+    const botton =document.getElementById("white") 
+    const rice=document.getElementById("ja");
+    const be=document.getElementById("ni");
+    
+    const rat=document.getElementById("fet");
+   let count=0;
+        
+    botton.onclick=function () {
+        count++;
+        rat.textContent=count;
+        
+    }   
+    rice.onclick=function () {
+        count--;
+        rat.textContent=count;
+    }
+    be.onclick=function () {
+        count=0;
+        rat.textContent=count;
+        
+    }
+    const is=document.getElementById("text");
+    const end=document.getElementById("submit");
+    let age;
+    const kill=document.getElementById('kill')
+    end.onclick=function () {
+        age=is.value;
+        age=Number(age);
+        if (age>273) {
+            kill.textContent='ho! it is too  hot';
+            
+        }
+        else if (age>0) {
+            kill.textContent='uh! it is a normal weather';
+            
+        }
+        else if (age==0) {
+            kill.textContent='run!it is a cold weather';
+            
+            
+        }
+    else  if (age>10) {
+    kill.textContent='it is too cold'
+    }
+   
+else{
+    kill.textContent='ivalid! pls try again'
+    age=9-2;
+}
+}   
+    
+    
+
+</Script>
+</html>

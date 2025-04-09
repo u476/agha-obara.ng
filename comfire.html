@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1 colo>comfirme your login</h1>
+        <div id="data"></div>
+        <div>
+            <button id="btn" ><a href="commence web.html">comfirme</a></button>
+        </div>
+<p id="type"></p>
+    </main>
+    <script>
+        fetch('python.html')
+        .then((result) => {const json=localStorage.getItem('form');
+        const obj=JSON.parse(json);
+        const type=document.getElementById("type");
+        for( key in obj){
+            const markup = 
+            `<div>
+                <span>${key}: ${obj[key] }</span>
+                </div>
+                `;
+                document.getElementById("data").innerHTML=markup;
+            }
+            
+        }).catch((err) => {
+            type.textContent=json;
+            
+        });
+        
+    
+    </script>
+</body>
+</html>
